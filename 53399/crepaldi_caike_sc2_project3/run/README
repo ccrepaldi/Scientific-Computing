@@ -1,0 +1,36 @@
+Velocity Filter Simulation
+----------------------------------------------
+
+Program created as the final project of Scientific Computer II.
+Author: Caike Crepaldi (December 2015)
+
+This program simulates the motion of charged particles in a velocity filter.
+
+USAGE:
+
+The program needs 3 command line arguments:
+./vfsim dt B E
+
+Where:
+dt is the time step (in seconds)
+B is the magnetic field stregth in x-axis (in Tesla)
+E is the electric field strength in z-axis (in V/m)
+
+If the program is executed with an incorrect number of argument, it prints information regarding its description and usage (help). 
+
+Also, the program needs to read data from input.dat file located in the ../run/ folder.
+
+Use the following syntax for input.dat files:
+
+First line: Number of particles [npar]
+
+N-th line (N=2,...,npar+1):
+Particle number [n] Vx [v_i(1)] Vy [v_i(2)] Vz [v_i(3)] Mass [m] Charge [q]
+
+The velocity must be in m/s, the mass must be in units of electron mass and the charge must be in units of electron charge.
+
+Example:
+3
+1 0 0.5 0 2 -1
+2 1 1.4 0 4 -3
+3 1 2 1 4.3 -5

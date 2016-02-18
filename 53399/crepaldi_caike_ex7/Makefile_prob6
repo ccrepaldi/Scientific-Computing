@@ -1,0 +1,9 @@
+# -*-makefile-*-
+prog: ex7p6.o ex7p6_main.o
+	gfortran -o prog ex7p6_main.o ex7p6.o
+ex7p6.o: ex7p6.f90
+	gfortran -c ex7p6.f90
+ex7p6_main.o: ex7p6_main.f90
+	gfortran -c ex7p6_main.f90
+clean:
+	rm -f *.o

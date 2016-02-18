@@ -1,0 +1,13 @@
+# -*-makefile-*-
+
+prog: ex8p3.o ex8p3_main.o
+	gfortran -o prog ex8p3_main.o ex8p3.o
+
+ex8p3.o: ex8p3.f90
+	gfortran -c ex8p3.f90
+
+ex8p3_main.o: ex8p3_main.f90
+	gfortran -c ex8p3_main.f90
+
+clean:
+	rm -f *.o

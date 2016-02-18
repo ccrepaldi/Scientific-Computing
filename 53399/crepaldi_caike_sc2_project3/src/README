@@ -1,0 +1,6 @@
+Velocity Filter Simulator
+
+To compile the source codes use the make command.
+See the Makefile for information regarding the compilation and linking.
+
+Read the READFILE in ../run/ folder for information regarding the program (usage, I/O and description).
